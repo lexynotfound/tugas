@@ -44,5 +44,8 @@ elif pilihan == '2':
     luas = panjang * lebar
     keliling = 2 *(panjang*lebar)
 
+elif pilihan == '3':
+    print("Anda telah keluar dari program")
+
     print("\nLuas Persegi Panjang   \t: ",str(luas))
     print("Keliling Persegi Panjang \t: ",str(keliling))
