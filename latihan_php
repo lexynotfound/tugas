@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Latihan 1</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1> form Registrasi </h1>
+    <form  action="proses.php" method="post">
+      <fieldset>
+        <legend>Biodata</legend>
+        <label for="nama">Nama</label>    
+        <input type="text" id="nama" name="nama"><br><br>
+        <label for="nim">NIM</label>
+        <input type="text" id="nim" name="nim"><br><br>
+        <label for="tgll">Tanggal Lahir</label>
+        <input type="date" id="tgll" name="tgll"><br><br>
+        <label for="almt">Alamat</label>
+        <input type="text" id="almt" name="almt"><br><br>
+        <label for="jk">Jenis Kelamin</label><br>
+        <input type="radio" id="jk" name="jk" value="Laki - Laki">Laki Laki<br>
+        <input type="radio" id="jk" name="jk" value="Perempuan">Perempuan<br>
+      </fieldset>
+      <br>
+      <br>
+      <fieldset>
+        <legend>User Account</legend>
+        <label for="username">Username</label> 
+        <input type="text" id="username" name="username"><br><br>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email"><br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"><br><br>
+        <label for="rtpassword">Retype Password</label>
+        <input type="password" id="rtpassword" name="rtpassword"><br><br>
+      </fieldset>
+      <br>
+      <br>
+      <fieldset>
+        <legend>Resolusi Tahun Ini</legend>
+        <input type="checkbox" id="op1" name="op1" value="HTML">menguasai HTML<br>
+        <input type="checkbox" id="op2" name="op2" value="CSS">menguasai CSS<br>
+        <input type="checkbox" id="op3" name="op3" value="PHP">menguasai PHP<br>
+      </fieldset>
+      <br>
+      <button style="width: 80px;">Login</button>
+    </form>
+  </body>
+</html>
