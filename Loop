@@ -1,0 +1,26 @@
+orang = ["jaka", "budi", "pery", "patrick"]
+hobi = ["main bola","nonton film", "karaoke", "membaca"]
+kota = ["bekasi"]
+
+for var_string in orang:
+  for var_string_2 in hobi:
+    for var_city in kota:
+      print(var_string,"Mempunyai",var_string_2, "di",var_city)
+      
+      
+      
+##nestedloop angka 
+
+daftarangka = [15, 25, 9, 19, 50,33,21]
+
+length =len(daftarangka)-1
+sorted = False
+
+while not sorted:
+  sorted = True
+  for i in range(length):
+    if daftarangka[i] > daftarangka[i+1]:
+      sorted = False
+      daftarangka[i], daftarangka[i+1] = daftarangka[i+1],daftarangka[i]
+
+print (daftarangka)
