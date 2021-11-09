@@ -23,7 +23,7 @@ def tipe_kendaraan():
     jam_keluar = int(input(" Masukkan Jam Keluar \t: "))
     
 
-    if tipe_kendaraan == "1" or tipe_kendaraan == "Mobil":
+    if tipe_kendaraan == "1" or tipe_kendaraan == "Mobil, MOBIL, mobil":
         lama_parkir = jam_keluar - jam_masuk
         biaya_parkir = 10000
 
@@ -38,12 +38,12 @@ def tipe_kendaraan():
             print("Biaya Parkir Mobil  :  Rp.", biaya_parkir)
             print("***********************************")
 
-    elif tipe_kendaraan == "2" or tipe_kendaraan == "Mobil":
+    elif tipe_kendaraan == "2" or tipe_kendaraan == "Motor, motor, MOTOR":
         lama_parkir = jam_keluar - jam_masuk
         biaya_parkir_motor = 5000
 
         if (biaya_parkir_motor >= lama_parkir):
-            biaya_parkir_motor =  biaya_parkir_motor+(biaya_parkir_motor * lama_parkir)
+            biaya_parkir_motor = (biaya_parkir_motor * lama_parkir)
 
             print("***********************************")
             print("Lama Parkir Motor   : ", lama_parkir, "jam\n")
